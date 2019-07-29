@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h2{color:#FF3300}
+    </style>
+    <title>Pradhan Mantri Kaushal Vikas Yojana</title>
+</head>
+<body BGCOLOR=#FFC733>
+<form action="/training_and_employment/PMKVY/" method="post">
+    {% csrf_token %}
+    <h2>{{c}}</h2>{{ form }}
+    <input type="submit" value="Next">
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1{color:#FF3300}
+    </style>
+    <title>Schemes for Financial Accounts</title>
+</head>
+<body BGCOLOR=#FFC733>
+{% for scheme in schemes %}
+<h1>{{scheme.name}}</h1>
+<p>{{scheme.description}}</p>
+<p><a href="/financial_accounts/{{scheme.check_link}}">Check your eligibility for this scheme</a></p>
+<p><a href="{{scheme.website_link}}">Visit website here!</a></p>
+{% endfor %}
+</body>
+</html>
